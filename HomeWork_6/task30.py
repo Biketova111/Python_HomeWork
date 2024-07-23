@@ -15,6 +15,6 @@ for i in range(n):
     progres.append(a1)
     a1=a1+d
     
-    
+ 
 print(progres)
 

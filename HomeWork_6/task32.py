@@ -5,21 +5,17 @@
 
 import random
 
-#my_list=[random.randint(1,10) for _ in range(20)]
-#minn=int(input("Введите минимальное значение диапазона: "))
-#maxx=int(input("Введите максивальное значение диапазона: "))
-
-my_list=[-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
-minn=5
-maxx=15
+my_list=[random.randint(1,10) for _ in range(20)]
+minn=int(input("Введите минимальное значение диапазона: "))
+maxx=int(input("Введите максивальное значение диапазона: "))
 
 print(my_list)
 
 index_list=[]
 
 for i in range(len(my_list)):
-    if minn<my_list[i]<maxx:
+    if minn<=my_list[i]<=maxx:
         index_list.append(i)
 
-print(index_list)
+print(index_list)  
 
