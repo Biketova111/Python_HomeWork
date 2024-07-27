@@ -17,9 +17,11 @@ def work_phonebook():
     action = input((f'Выберите действие которое хотите совершить: '))
     print('')
     if action == '1':
-       
+       read_file()
+       work_phonebook()
     elif action == '2':
-        
+        create_contact()
+        work_phonebook()
     elif action == '3':
         contact_search()
         work_phonebook()
@@ -32,7 +34,7 @@ def work_phonebook():
 
 def read_file():
         with open(path, 'r', encoding= 'UTF-8') as my_file:
-            read_file = my_file.readlines()
+            read_file = my_file.readli()
             print('Ваш телефонный справочник пуст' if len(read_file) == 0 else print(read_file))
             
 def create_contact():
